@@ -31,10 +31,14 @@
 
   <dialog class="sheet" id="share" aria-labelledby="shareTitle">
     <div class="sheet-in">
-      <h2 id="shareTitle">Condividi l'app</h2>
+      <h2 id="shareTitle" tabindex="-1">Condividi l'app</h2>
       <p>Fate inquadrare il codice con la fotocamera del telefono: si apre l'app della RSU FIM.</p>
       <div class="qr" id="qr" role="img" aria-label="QR code con il link dell'app"></div>
       <div class="url" id="shareUrl"></div>
+      <div class="howto" aria-label="Come installare l'app">
+        <div><h3>iPhone</h3><p>Apri il link con Safari, tocca <strong>Condividi</strong> e poi <strong>Aggiungi alla schermata Home</strong>.</p></div>
+        <div><h3>Android</h3><p>Apri il link con Chrome e tocca <strong>Installa</strong>, oppure menu ⋮ → <strong>Aggiungi a schermata Home</strong>.</p></div>
+      </div>
       <div class="sheet-acts">
         <button type="button" class="btn primary" id="shareNative" hidden>Invia il link…</button>
         <button type="button" class="btn" id="shareCopy">Copia il link</button>

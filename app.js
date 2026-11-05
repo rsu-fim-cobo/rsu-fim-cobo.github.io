@@ -538,6 +538,7 @@
     $("#shareUrl").textContent = appUrl;
     $("#shareToast").textContent = "";
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+    dlg.scrollTop = 0; $("#shareTitle").focus({ preventScroll: true });   // parte dall'alto, anche sui telefoni piccoli
   });
   $("#shareClose").addEventListener("click", () => dlg.close ? dlg.close() : dlg.removeAttribute("open"));
   dlg.addEventListener("click", e => { if (e.target === dlg && dlg.close) dlg.close(); });

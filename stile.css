@@ -51,13 +51,18 @@ a{color:var(--accent)}
 .share-btn svg{width:24px;height:24px}
 
 /* share sheet */
-dialog.sheet{border:0;padding:0;background:var(--surface);color:var(--ink);border-radius:16px;width:min(420px,calc(100% - 32px));max-height:calc(100dvh - 32px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+dialog.sheet{border:0;padding:0;overflow:auto;overscroll-behavior:contain;background:var(--surface);color:var(--ink);border-radius:16px;width:min(420px,calc(100% - 32px));max-height:calc(100dvh - 32px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
 dialog.sheet::backdrop{background:rgba(8,14,11,.55)}
 .sheet-in{padding:20px;display:grid;gap:14px;justify-items:center;text-align:center}
 .sheet-in h2{font-size:24px;font-weight:700}
 .sheet-in p{margin:0;color:var(--muted);font-size:14.5px;max-width:34ch}
-.qr{background:#FFFFFF;padding:14px;border-radius:12px;border:1px solid var(--line);width:min(260px,100%)}
+.qr{background:#FFFFFF;padding:14px;border-radius:12px;border:1px solid var(--line);width:min(260px,100%,36vh)}
 .qr svg{display:block;width:100%;height:auto}
+.howto{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left}
+.howto > div{background:var(--bg);border-radius:10px;padding:10px 12px;display:grid;gap:4px;align-content:start}
+.howto h3{font-family:var(--f-display);font-size:16px;font-weight:700}
+.howto p{margin:0;font-size:13.5px;line-height:1.45;color:var(--ink);max-width:none}
+@media (max-width:360px){.howto{grid-template-columns:1fr}}
 .url{font-size:13px;color:var(--muted);word-break:break-all;user-select:all}
 .sheet-acts{display:grid;gap:8px;width:100%}
 .sheet-acts .btn{justify-content:center;width:100%}
