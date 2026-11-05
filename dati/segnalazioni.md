@@ -39,7 +39,7 @@ E' stato segnalato che sul fondo sono comparse delle more dovute al ritardo con 
 
 # Mancato guadagno per il ritardo dei versamenti sul fondo Cometa
 tag: Fondo Cometa
-stato: chiusa
+stato: in lavorazione
 inviata il: 28/07/2026
 risposta il: 20/10/2026
 risposta: L'azienda non sembra disponibile ad accettare la richiesta.
