@@ -23,11 +23,31 @@
     <div class="top-in">
       <div class="brand"><span class="mark" aria-hidden="true">RSU</span><span class="org">FIM · COBO S.p.A.</span></div>
       <h1 id="pageTitle">News</h1>
-      <button type="button" class="share-btn" id="shareOpen" aria-label="Condividi l'app con un QR code">
+      <div class="top-acts">
+      <button type="button" class="share-btn" id="howOpen" aria-label="Come installare l'app sul telefono" title="Installa l'app">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v7M9 11.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <button type="button" class="share-btn" id="shareOpen" aria-label="Condividi l'app con un QR code" title="Condividi l'app">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 6.5h1v1h-1zM16.5 6.5h1v1h-1zM6.5 16.5h1v1h-1z" fill="currentColor" stroke="currentColor"/><path d="M14 14h2.5v2.5H14zM17.5 17.5H20V20h-2.5zM14 18.5h2M18.5 14H20" stroke="currentColor" stroke-width="1.8"/></svg>
       </button>
+      </div>
     </div>
   </header>
+
+  <dialog class="sheet" id="how" aria-labelledby="howTitle">
+    <div class="sheet-in">
+      <h2 id="howTitle" tabindex="-1">Installa l'app sul telefono</h2>
+      <p id="howState">Così la apri con un tocco dalla schermata Home, come le altre app.</p>
+      <div class="howto howto-big" aria-label="Come installare l'app">
+        <div><h3>iPhone</h3><p>Apri il link con Safari, tocca <strong>Condividi</strong> e poi <strong>Aggiungi alla schermata Home</strong>.</p></div>
+        <div><h3>Android</h3><p>Apri il link con Chrome e tocca <strong>Installa</strong>, oppure menu ⋮ → <strong>Aggiungi a schermata Home</strong>.</p></div>
+      </div>
+      <div class="sheet-acts">
+        <button type="button" class="btn primary" id="howInstall" hidden>Installa ora</button>
+        <button type="button" class="btn ghost" id="howClose">Chiudi</button>
+      </div>
+    </div>
+  </dialog>
 
   <dialog class="sheet" id="share" aria-labelledby="shareTitle">
     <div class="sheet-in">

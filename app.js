@@ -518,6 +518,26 @@
     deferred = null; $("#install").hidden = true;
   });
   $("#installClose").addEventListener("click", () => { $("#install").hidden = true; store.set("rsu-install-chiuso", "1"); });
+
+  // Pulsante in alto: istruzioni per installare l'app (e "Installa ora" dove il telefono lo permette)
+  const how = $("#how");
+  $("#howOpen").addEventListener("click", () => {
+    $("#howState").textContent = standalone
+      ? "Stai già usando l'app installata. Queste istruzioni servono per installarla su un altro telefono."
+      : "Così la apri con un tocco dalla schermata Home, come le altre app.";
+    $("#howInstall").hidden = !deferred;
+    if (how.showModal) how.showModal(); else how.setAttribute("open", "");
+    how.scrollTop = 0; $("#howTitle").focus({ preventScroll: true });
+  });
+  $("#howInstall").addEventListener("click", async () => {
+    if (!deferred) return;
+    deferred.prompt();
+    try { await deferred.userChoice; } catch (_) {}
+    deferred = null; $("#howInstall").hidden = true; $("#install").hidden = true;
+    how.close ? how.close() : how.removeAttribute("open");
+  });
+  $("#howClose").addEventListener("click", () => how.close ? how.close() : how.removeAttribute("open"));
+  how.addEventListener("click", e => { if (e.target === how && how.close) how.close(); });
   window.addEventListener("appinstalled", () => { $("#install").hidden = true; });
 
   /* ---------- condivisione con QR code ---------- */

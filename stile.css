@@ -45,7 +45,8 @@ a{color:var(--accent)}
 .top-in{max-width:720px;margin:0 auto;padding-block:12px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:4px 12px}
 .top-in .brand,.top-in h1{grid-column:1}
 .brand{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.92}
-.share-btn{grid-column:2;grid-row:1/span 2;align-self:center;all:unset;cursor:pointer;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;color:var(--bar-ink);background:rgba(255,255,255,.14)}
+.top-acts{grid-column:2;grid-row:1/span 2;align-self:center;display:flex;gap:8px}
+.share-btn{all:unset;cursor:pointer;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;color:var(--bar-ink);background:rgba(255,255,255,.14)}
 .share-btn:hover{background:rgba(255,255,255,.24)}
 .share-btn:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .share-btn svg{width:24px;height:24px}
@@ -63,6 +64,8 @@ dialog.sheet::backdrop{background:rgba(8,14,11,.55)}
 .howto h3{font-family:var(--f-display);font-size:16px;font-weight:700}
 .howto p{margin:0;font-size:13.5px;line-height:1.45;color:var(--ink);max-width:none}
 @media (max-width:360px){.howto{grid-template-columns:1fr}}
+.howto-big{grid-template-columns:1fr}
+.howto-big p{font-size:15px}
 .url{font-size:13px;color:var(--muted);word-break:break-all;user-select:all}
 .sheet-acts{display:grid;gap:8px;width:100%}
 .sheet-acts .btn{justify-content:center;width:100%}
