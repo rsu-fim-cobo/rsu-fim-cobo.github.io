@@ -178,6 +178,8 @@ main{max-width:720px;margin:0 auto;padding-block:18px calc(var(--tab-h) + 28px +
 /* "Da riferire" (grigio chiaro): la scritta dello stato è un po' più scura, per leggerla bene */
 .prop.st-dariferire .state{color:var(--s-white-ink)}
 
+.esito{font-size:17px;line-height:1;margin-left:-2px}
+
 /* bottom tab bar */
 .tabbar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);
   display:grid;grid-template-columns:repeat(5,minmax(0,1fr));

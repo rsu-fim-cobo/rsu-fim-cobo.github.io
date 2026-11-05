@@ -10,9 +10,11 @@ COME SCRIVERE UNA SEGNALAZIONE
     risposta: cosa ha risposto l'azienda, in una riga (facoltativo)
 - Valori per "stato":
     da riferire    → Da riferire all'azienda
-    riferita       → Riferita all'azienda (l'app conta i giorni da "inviata il"; oltre 30 li mostra in rosso)
-    in lavorazione → In lavorazione (anche qui l'app conta i giorni)
+    riferita       → Riferita all'azienda
+    in lavorazione → In lavorazione
     chiusa         → Chiusa (risolta oppure non accolta: scrivete l'esito nella riga "risposta")
+- Per le richieste chiuse, aggiungete sotto lo stato la riga "esito:" con
+    positivo  → 😊      neutro → 😐      negativo → 😞
 - Poi una riga vuota e la descrizione, libera.
 - Il sito è pubblico: niente nomi di colleghi o casi personali riconoscibili.
 Questo riquadro di istruzioni non compare nell'app.
@@ -21,6 +23,7 @@ Questo riquadro di istruzioni non compare nell'app.
 # Mancato versamento dei contributi sul fondo Cometa
 tag: Fondo Cometa
 stato: chiusa
+esito: positivo
 inviata il: 28/07/2026
 risposta il: 20/10/2026
 risposta: I fondi risultano ora tutti versati.
@@ -31,6 +34,7 @@ L'azienda ha garantito che i contributi sono stati inviati al fondo ma ci sono s
 # More per il ritardo dei versamenti sul fondo Cometa
 tag: Fondo Cometa
 stato: chiusa
+esito: positivo
 inviata il: 20/10/2026
 risposta il: 20/10/2026
 risposta: Le more saranno a carico dell'azienda.

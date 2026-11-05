@@ -113,8 +113,8 @@
       });
     },
     segnalazioni: txt => blocks(txt, 1).map(b => {
-      const { data, body } = meta(b.lines, ["tag", "tags", "stato", "reparto", "inviata il", "inviata", "risposta il", "risposta"]);
-      return { titolo: b.titolo, tags: parseTags(data.tag || data.tags), stato: data.stato, reparto: data.reparto,
+      const { data, body } = meta(b.lines, ["tag", "tags", "stato", "esito", "reparto", "inviata il", "inviata", "risposta il", "risposta"]);
+      return { titolo: b.titolo, tags: parseTags(data.tag || data.tags), stato: data.stato, esito: data.esito, reparto: data.reparto,
         inviata: toISO(data["inviata il"] || data.inviata), risposta_il: toISO(data["risposta il"]), risposta: data.risposta, testo: body };
     }),
     contatti: txt => {
@@ -397,6 +397,20 @@
     { k: "dariferire", label: "Da riferire all'azienda", c: "--s-white" },
     { k: "chiusa", label: "Chiusa", c: "--s-closed" }
   ];
+  // Esito delle richieste chiuse: faccina accanto allo stato
+  const ESITI = {
+    positivo: { e: "😊", label: "Esito positivo" },
+    neutro: { e: "😐", label: "Esito parziale" },
+    negativo: { e: "😞", label: "Esito negativo" }
+  };
+  function normEsito(v) {
+    v = normKey(v);
+    if (!v) return null;
+    if (/^(posit|buon|felic|ottenut|accolt|risolt|si$|😊|🙂|:\))/.test(v)) return "positivo";
+    if (/^(negat|triste|respint|non accolt|rifiut|no$|😞|🙁|☹|:\()/.test(v)) return "negativo";
+    if (/^(neutr|indiff|parzial|medi|così|cosi|😐|:\|)/.test(v)) return "neutro";
+    return null;
+  }
   function normStatoS(x) {
     const v = normKey(x.stato);
     if (/lavoraz/.test(v)) return "lavorazione";
@@ -429,6 +443,7 @@
           return `<article class="prop st-${s.k}" style="--st:var(${s.c})">
             <div class="prop-head">
               <span class="state"><i class="dot"></i>${esc(s.label)}</span>
+              ${s.k === "chiusa" && ESITI[normEsito(x.esito)] ? `<span class="esito" role="img" aria-label="${ESITI[normEsito(x.esito)].label}" title="${ESITI[normEsito(x.esito)].label}">${ESITI[normEsito(x.esito)].e}</span>` : ""}
             </div>
             <h2>${esc(x.titolo)}</h2>
             ${x.testo ? `<div class="rich">${rich(x.testo)}</div>` : ""}

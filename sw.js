@@ -2,7 +2,7 @@
    Strategia: si prova sempre prima la rete (così si vede subito l'ultima versione pubblicata);
    la copia salvata sul telefono si usa solo quando la rete non c'è.
    Se aggiungete file all'app, elencateli qui sotto e aumentate il numero di VERSIONE. */
-const VERSIONE = "rsu-v20";
+const VERSIONE = "rsu-v21";
 
 // File indispensabili: senza questi l'app non parte offline.
 const FILE_APP = [
