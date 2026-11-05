@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volantino · App RSU FIM COBO</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="icone/favicon.png">
+  <link rel="preload" href="fonts/archivo-narrow-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    /* Volantino A4 da stampare e appendere in bacheca. Colori: gli stessi dell'app (verde e rosso FIM). */
+    @font-face{font-family:"Archivo Narrow";font-weight:700;src:url(fonts/archivo-narrow-latin-700-normal.woff2) format("woff2")}
+    @font-face{font-family:"IBM Plex Sans";font-weight:400;src:url(fonts/ibm-plex-sans-latin-400-normal.woff2) format("woff2")}
+    @font-face{font-family:"IBM Plex Sans";font-weight:600;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2")}
+    :root{--verde:#00843D;--rosso:#D0202E;--ink:#14201A;--muted:#55645B;--line:#D5DDD8;--bg:#E9EEEB;
+      --f-display:"Archivo Narrow","Arial Narrow",sans-serif;--f-body:"IBM Plex Sans",system-ui,sans-serif;color-scheme:light}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .tools{display:flex;gap:10px;justify-content:center;padding:16px}
+    .tools button{font:600 15px var(--f-body);padding:12px 18px;border-radius:8px;border:0;background:var(--verde);color:#fff;cursor:pointer}
+    .page{width:210mm;min-height:297mm;margin:0 auto 24px;background:#fff;display:flex;flex-direction:column;box-shadow:0 4px 24px rgba(0,0,0,.12)}
+    .band{background:var(--verde);color:#fff;padding:12mm 16mm 9mm;border-bottom:3mm solid var(--rosso)}
+    .eyebrow{font-size:11pt;letter-spacing:.12em;text-transform:uppercase;opacity:.92}
+    .eyebrow b{font-family:var(--f-display);border-bottom:2px solid #fff;letter-spacing:.04em}
+    h1{font-family:var(--f-display);font-size:40pt;line-height:1.02;margin:5mm 0 0;font-weight:700}
+    .body{flex:1;padding:9mm 16mm 6mm;display:flex;flex-direction:column;gap:7mm}
+    .lead{font-size:16pt;line-height:1.4;margin:0}
+    ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:6mm 7mm}
+    li{display:grid;gap:2mm;font-size:12pt;line-height:1.4;border-top:1.2mm solid var(--verde);padding-top:3mm;color:var(--muted)}
+    li b{font-family:var(--f-display);font-size:17pt;color:var(--ink)}
+    .qrbox{flex:1;display:grid;gap:4mm;justify-items:center;align-content:center;text-align:center}
+    .qr{width:68mm;border:1px solid var(--line);border-radius:4mm;padding:5mm;background:#fff}
+    .qr svg{display:block;width:100%;height:auto}
+    .scan{font-family:var(--f-display);font-size:22pt;font-weight:700;color:var(--verde)}
+    .url{font-size:9.5pt;color:var(--muted);word-break:break-all}
+    .install{margin:0 16mm 11mm;border-top:1px solid var(--line);padding-top:6mm;display:grid;grid-template-columns:1fr 1fr;gap:8mm;font-size:11pt;line-height:1.4}
+    .install h2{font-family:var(--f-display);font-size:14pt;margin:0 0 1.5mm;color:var(--ink)}
+    .install p{margin:0;color:var(--muted)}
+    @page{size:A4;margin:0}
+    @media print{body{background:#fff}.tools{display:none}.page{margin:0;box-shadow:none;height:297mm;overflow:hidden}}
+    @media screen and (max-width:820px){.page{width:auto;min-height:0;margin:0 12px 24px}ul{grid-template-columns:1fr}.qr{width:min(68mm,100%)}.install{grid-template-columns:1fr}h1{font-size:34pt}}
+  </style>
+</head>
+<body>
+  <div class="tools"><button type="button" id="print">Stampa il volantino</button></div>
+
+  <main class="page">
+    <header class="band">
+      <div class="eyebrow"><b>RSU</b> &nbsp;FIM · COBO S.p.A.</div>
+      <h1>L'app della RSU FIM<br>sul tuo telefono</h1>
+    </header>
+
+    <section class="body">
+      <p class="lead">Tutto quello che fa la RSU, sempre aggiornato e a portata di mano.</p>
+        <ul>
+          <li><b>News</b>Cosa succede agli incontri con l'azienda e in assemblea.</li>
+          <li><b>Contratto integrativo</b>Le nostre proposte e a che punto è la trattativa.</li>
+          <li><b>Convenzioni</b>Sconti per i dipendenti COBO e per gli iscritti CISL.</li>
+          <li><b>Richieste</b>Proposte e segnalazioni dei lavoratori, e cosa ha risposto l'azienda.</li>
+          <li><b>Contatti</b>I delegati RSU e gli orari della saletta sindacale.</li>
+        </ul>
+      <div class="qrbox">
+        <div class="qr" id="qr" role="img" aria-label="QR code con il link dell'app"></div>
+        <div class="scan">Inquadra con la fotocamera</div>
+        <div class="url" id="url"></div>
+      </div>
+    </section>
+
+    <section class="install">
+      <div><h2>iPhone</h2><p>Apri il link con Safari, tocca <strong>Condividi</strong> e poi <strong>Aggiungi alla schermata Home</strong>.</p></div>
+      <div><h2>Android</h2><p>Apri il link con Chrome e tocca <strong>Installa</strong>, oppure menu ⋮ → <strong>Aggiungi a schermata Home</strong>.</p></div>
+    </section>
+  </main>
+
+  <script src="lib/qrcode.js"></script>
+  <script>
+    (function () {
+      // Indirizzo pubblico dell'app: sempre questo, anche se il file si apre dal computer.
+      var url = "https://rsu-fim-cobo.github.io/";
+      document.getElementById("url").textContent = url;
+      if (typeof qrcode === "function") {
+        var q = qrcode(0, "M"); q.addData(url); q.make();
+        var n = q.getModuleCount(), m = 2, d = "";
+        for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) if (q.isDark(r, c)) d += "M" + (c + m) + " " + (r + m) + "h1v1h-1z";
+        document.getElementById("qr").innerHTML = '<svg viewBox="0 0 ' + (n + m * 2) + " " + (n + m * 2) + '" shape-rendering="crispEdges"><rect width="100%" height="100%" fill="#fff"/><path d="' + d + '" fill="#000"/></svg>';
+      }
+      document.getElementById("print").addEventListener("click", function () { window.print(); });
+    })();
+  </script>
+</body>
+</html>
