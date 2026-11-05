@@ -39,10 +39,8 @@ E' stato segnalato che sul fondo sono comparse delle more dovute al ritardo con 
 
 # Mancato guadagno per il ritardo dei versamenti sul fondo Cometa
 tag: Fondo Cometa
-stato: in lavorazione
+stato: riferita
 inviata il: 28/07/2026
-risposta il: 20/10/2026
-risposta: L'azienda non sembra disponibile ad accettare la richiesta.
 
 È stato chiesto all'azienda se è possibile compensare il mancato guadagno dovuto al ritardo con cui sono stati fatti i versamenti almeno con una somma forfettaria a tutti i lavoratori interessati.
 
