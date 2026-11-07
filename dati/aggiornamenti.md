@@ -12,27 +12,6 @@ COME SCRIVERE UN AGGIORNAMENTO
 Questo riquadro di istruzioni non compare nell'app.
 -->
 
-# Incontro con l'azienda: ferie, PAR e chiusure
-data: 05/11/2026
-tipo: Incontro con l'azienda
-
-Come vi avevamo anticipato, giovedì 5 novembre ci siamo incontrati con l'azienda e abbiamo affrontato i seguenti punti.
-
-## Ferie e PAR
-Abbiamo segnalato di nuovo il rischio che alcuni lavoratori vadano in negativo con il saldo di ferie e PAR.
-L'azienda ci ha risposto che buona parte del personale non dovrà usare ferie o PAR nelle giornate di chiusura (circa due terzi lavoreranno regolarmente). I responsabili sono stati invitati a gestire le presenze con criterio: far smaltire ferie e PAR a chi ne ha accumulati molti e far lavorare, per quanto possibile, chi ne ha pochi.
-
-## Chiusura del 27 novembre
-Per quel giorno è previsto un intervento di manutenzione sulla rete elettrica. L'azienda ci darà aggiornamenti per chiarire chi dovrà venire al lavoro e in quali orari.
-
-## Chiusura invernale
-Al momento non ci sono novità. L'azienda ci aggiornerà verso metà novembre e vi informeremo appena avremo notizie.
-
-## Gli altri punti
-Gli altri due temi che avevamo segnalato sono stati accennati all'azienda in un'altra riunione, ma non sono stati affrontati ufficialmente nell'incontro del 5 novembre.
-- **Ferie per chi ha molti progetti in corso**: l'azienda ci ha risposto che i responsabili sono stati sensibilizzati, perché le ferie siano compatibili con il carico di lavoro.
-- **Ore di PAR in caso di cessazione del rapporto**: al momento non abbiamo ricevuto risposta.
-
 # Assemblea FIM CISL
 data: 04/11/2026
 tipo: Assemblea
