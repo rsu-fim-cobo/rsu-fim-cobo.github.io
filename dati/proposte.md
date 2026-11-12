@@ -50,15 +50,24 @@ aggiornato: 20/10/2026
 # Convenzioni
 tag: Welfare
 stato: bozza
-aggiornato: 20/10/2026
-- Convenzioni con centri estivi per aiutare nella gestione dei figli nel periodo estivo
-- Convenzioni con carrozzerie e meccanici
+aggiornato: 12/11/2026
+- Salute: farmacie, centri di fisioterapia, psicologi.
+- Famiglia e scuola: centri estivi, doposcuola, cartolibrerie.
+- Auto e mobilità: carrozzerie, meccanici, gommisti, negozi di bici.
+- Sport: negozi di articoli sportivi, corsi di pilates e yoga, affitto di campi da calcetto e padel.
+- Tempo libero: pizzerie e locali, agenzie di viaggio, vivai.
 
 # Banca ore solidale
 tag: Welfare
 stato: bozza
 aggiornato: 20/10/2026
 Estendere le categorie dei lavoratori che possono richiederla anche ai lavoratori con coniugi e figli maggiorenni che per particolari condizioni di salute necessitano di cure costanti e assistenza continuativa.
+
+# Permessi per visite mediche
+tag: Welfare
+stato: bozza
+aggiornato: 12/11/2026
+- Aumentare le ore di permesso retribuito per visite mediche rispetto alle attuali 4 o 8 ore (in base alla patologia).
 
 # Mensa e Area break
 tag: Welfare
