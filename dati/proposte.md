@@ -40,11 +40,11 @@ aggiornato: 20/10/2026
 - Prevedere piani di crescita professionale per tutti i lavoratori.
 - Estendere le competenza della commissione paritetica sui corsi di formazione al monitoraggio dei piani di crescita (o in alternativa prevederne una specifica).
 
-# Passaggio di livello per anzianità
+# Aumento per anzianità
 tag: Crescita Professionale
 stato: bozza
-aggiornato: 12/11/2026
-- Abbassare la soglia di anzianità per il passaggio al livello superiore, oggi fissata a 15 anni.
+aggiornato: 15/11/2026
+- Oggi, dopo 15 anni di anzianità, si riceve un aumento pari a uno scatto di livello, senza cambiare livello. Proponiamo di ridurre la soglia dei 15 anni.
 
 # Congedi parentali
 tag: Welfare
