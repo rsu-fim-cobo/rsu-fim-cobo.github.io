@@ -20,16 +20,24 @@ COME SCRIVERE UNA SEGNALAZIONE
 Questo riquadro di istruzioni non compare nell'app.
 -->
 
-# Mancato versamento dei contributi sul fondo Cometa
+# Mancato versamento dei contributi sul fondo Cometa 1° e 2° trimestre
 tag: Fondo Cometa
 stato: chiusa
 esito: positivo
 inviata il: 28/07/2026
 risposta il: 20/10/2026
-risposta: I fondi risultano ora tutti versati.
+risposta: L'azienda ci ha comunicato che i fondi  del 1° e 2° trimestre risultano ora tutti versati.
 
-E' stato segnalato che i contributi del 2026 non risultano versati. 
+E' stato segnalato che i contributi del 1° e 2° trimestre 2026 non risultano versati. 
 L'azienda ha garantito che i contributi sono stati inviati al fondo ma ci sono stati problemi amministrativi nell’associare a ogni nominativo la quota corrispondente.
+
+# Mancato versamento dei contributi sul fondo Cometa 3° trimestre
+tag: Fondo Cometa
+stato: in lavorazione
+inviata il: 17/11/2026
+risposta: L'azienda ci ha comunicato che sembra persiste ancora un problema di abbinamento tra fondi e nominativi… Stanno lavorando per capire cosa è successo.
+
+E' stato segnalato che i contributi del 3° trimestre 2026 non risultano versati.
 
 # More per il ritardo dei versamenti sul fondo Cometa
 tag: Fondo Cometa
@@ -37,22 +45,28 @@ stato: chiusa
 esito: positivo
 inviata il: 20/10/2026
 risposta il: 20/10/2026
-risposta: Le more saranno a carico dell'azienda.
+risposta: L'azienda ci ha comunicato che le more saranno a carico dell'azienda.
 
 E' stato segnalato che sul fondo sono comparse delle more dovute al ritardo con cui sono state versati i contributi.
 
 # Mancato guadagno per il ritardo dei versamenti sul fondo Cometa
 tag: Fondo Cometa
-stato: riferita
+stato: chiusa
+esito: negativo
 inviata il: 28/07/2026
+risposta il: 17/11/2026
+risposta: L'azienda ci ha comunicato che non è possibile provvedere a risarcire il mancato guadagno.
 
 È stato chiesto all'azienda se è possibile compensare il mancato guadagno dovuto al ritardo con cui sono stati fatti i versamenti almeno con una somma forfettaria a tutti i lavoratori interessati.
 
 # Comunicazione con ufficio personale
 tag: Ufficio Personale
-stato: da riferire
+stato: chiusa
+inviata il: 17/11/2026
+risposta il: 17/11/2026
+risposta: L'azienda ci ha comunicato che gli audit interni dimostrano che l'efficienza di gestione delle richieste è aumentata rispetto agli anni scorsi anche se possono persistere ritardi per specifiche tematiche di una certa complessità.
 
-In diversi segnalano che la comunicazione con l'ufficio personale è diventata difficile: è stato tolto lo sportello e se si invia una mail di richiesta/chiarimento si riceve risposta con un ritardo significativo.
+In diversi lavoratori segnalano che la comunicazione con l'ufficio personale è diventata difficile: è stato tolto lo sportello e se si invia una mail di richiesta/chiarimento si riceve risposta con un ritardo significativo.
 
 # Qualità e pulizia della mensa
 tag: Mensa
@@ -90,8 +104,11 @@ Il regolamento interno e le regole in merito alla flessibilità sono state scelt
 # Bagni ufficio tecnico
 tag: Spazi Comuni
 reparto: Ufficio Tecnico
-stato: riferita
+stato: chiusa
+esito: negativo
 inviata il: 28/07/2026
+risposta il: 03/11/2026
+risposta: L'azienda ci ha comunicato che attualmente non è possibile trovare una soluzione se non quella di andare nei piani sottostanti in caso di necessità.
 
 È stata espressa la necessità di aumentare il numero di bagni riservati alle donne in ufficio tecnico (attualmente è presente un solo bagno).
 
@@ -121,6 +138,10 @@ Le richieste raccolte:
 
 # Calendario delle chiusure aziendali
 tag: Ferie
-stato: da riferire
+stato: chiusa
+esito: negativo
+inviata il: 20/10/2026
+risposta il: 20/11/2026
+risposta: L'azienda ci ha comunicato che a causa dell'andamento altalenante del mercato non è possibile prevedere a inizio anno il calendario delle chiusure aziendali.
 
 Si chiede di ricevere a inizio anno il calendario delle chiusure aziendali, così da poter organizzare per tempo ferie e impegni personali.
